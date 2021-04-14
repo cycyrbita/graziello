@@ -1,35 +1,10 @@
 /* stylelint-disable */
 
 @font-face {
-  font-family: 'Codec-Cold';
-  src: url('../fonts/Codec-Cold/CodecCold-ExtraBold.woff2') format('woff2'),
-    url('../fonts/Codec-Cold/CodecCold-ExtraBold.woff') format('woff');
-  font-weight: 800;
+  font-family: 'PlayfairDisplay';
+  src: url("../fonts/PlayfairDisplay/PlayfairDisplay.woff") format("woff");
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'Codec-Cold';
-  src: url('../fonts/Codec-Cold/CodecCold-Bold.woff2') format('woff2'),
-    url('../fonts/Codec-Cold/CodecCold-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Codec-Cold';
-  src: url('../fonts/Codec-Cold/CodecCold-News.woff2') format('woff2'),
-    url('../fonts/Codec-Cold/CodecCold-News.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Codec-Cold';
-  src: url('../fonts/Codec-Cold/CodecCold-Regular.woff2') format('woff2'),
-    url('../fonts/Codec-Cold/CodecCold-Regular.woff') format('woff');
   font-weight: 400;
-  font-style: normal;
 }
 
 @font-face {
@@ -51,4 +26,18 @@
   src: url("../fonts/Montserrat/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat/Montserrat-SemiBold.woff") format("woff");
   font-style: normal;
   font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat/Montserrat-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat/Montserrat-Black.woff") format("woff");
+  font-style: normal;
+  font-weight: 800;
 }

@@ -1,0 +1,132 @@
+.nav {
+    margin-right: 30px;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item {
+    & + & {
+        margin-left: 40px;
+    }
+}
+
+.nav__link {
+    padding: 5px 10px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+
+    &:hover {
+        color: #a7617f;
+    }
+
+    &.active {
+        text-decoration: underline;
+        color: #a7617f;
+    }
+}
+
+@media (max-width: 1310px) {
+    .nav__item {
+        &+& {
+            margin-left: 20px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header__body {
+        justify-content: flex-start;
+    }
+
+    .header__nav {
+        width: auto;
+        margin-top: 0;
+        position: relative;
+        margin-right: 0;
+        margin-left: auto;
+
+        &.visible {
+            & .nav__list {
+                transform: translateX(0);
+            }
+
+            & .nav__burger {
+                & span {
+                    &:nth-child(1) {
+                        transform: translateY(10px) rotate(45deg);
+                    }
+
+                    &:nth-child(2) {
+                        display: none;
+                    }
+
+                    &:nth-child(3) {
+                        transform: translateY(-10px) rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+
+    .nav__list {
+        position: absolute;
+        z-index: 10;
+        top: calc(100% + 15px);
+        right: -15px;
+        flex-direction: column;
+        background-color: #ffa26f;
+        transform: translateX(100%);
+        transition: 0.3s transform;
+    }
+
+    .nav__item {
+        border-top: 1px solid rgba(255, 255, 255, 0.22);
+
+        & + & {
+            margin-left: 0;
+        }
+    }
+
+    .nav__link {
+        display: block;
+        text-align: right;
+        padding-left: 50px;
+        padding-right: 15px;
+        color: #fff;
+
+        &:hover {
+            background-color: #fdac80;
+        }
+
+        &.active {
+            border-right: 5px solid #fff;
+            color: #000;
+        }
+    }
+
+    .nav__burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 22px;
+        box-sizing: content-box;
+        padding: 5px;
+        margin-left: auto;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #fdac80;
+        }
+
+        & span {
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            transition: 0.3s transform;
+        }
+    }
+}
