@@ -1,5 +1,5 @@
 .nav {
-    margin-right: 30px;
+    margin-right: -10px;
 }
 
 .nav__list {
@@ -28,10 +28,14 @@
     }
 }
 
-@media (max-width: 1310px) {
+@media (max-width: 1000px) {
+    .nav__list {
+        justify-content: center;
+    }
+
     .nav__item {
         &+& {
-            margin-left: 20px;
+            margin-left: 10px;
         }
     }
 }

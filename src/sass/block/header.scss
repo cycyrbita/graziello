@@ -19,43 +19,14 @@
     flex-wrap: wrap;
 }
 
-.header__btn {
-    padding: 10px 25px;
-    font-size: 10px;
-    font-weight: 700;
-    color: #000;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 3px;
-    background-color: #f5cadc;
-}
-
-@media (max-width: 1310px) {
+@media (max-width: 1000px) {
     .header .container {
         max-width: 100% !important;
     }
-
-    .header__logo {
-        order: 1;
-    }
-
-    .header__nav {
-        width: 100%;
-        order: 3;
-        margin-top: 15px;
-    }
-
-    .header__btn {
-        order: 2;
-    }
-
-    .nav__list {
-        justify-content: center;
-    }
 }
 
-@media (max-width: 480px) {
-    .header__btn {
-        padding: 10px;
+@media (max-width: 768px) {
+    .header__body {
+        align-items: flex-end;
     }
 }

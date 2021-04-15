@@ -1,14 +1,35 @@
 
 .logo {
-    padding: 7px;
     margin-right: 30px;
-    background-color: #fff;
-    border-radius: 3px;
-    font-weight: 800;
-    text-transform: uppercase;
-    color: #000;
-    font-size: 14px;
     text-decoration: none;
+
+    & p {
+        display: inline-block;
+        font-size: 14px;
+        color: #fff;
+        margin-left: 5px;
+    }
+
+    & span {
+        display: inline-block;
+        padding: 7px;
+        background-color: #fff;
+        border-radius: 3px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: #000;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .logo {
+        & p {
+            display: block;
+            margin-left: 0;
+            margin-top: 5px;
+        }
+    }
 }
 
 @media (max-width: 480px) {
