@@ -75,7 +75,7 @@
         }
     }
 
-    .nav__list {
+    .nav__list_header {
         position: absolute;
         z-index: 10;
         top: calc(100% + 15px);
@@ -84,6 +84,23 @@
         background-color: #ffa26f;
         transform: translateX(100%);
         transition: 0.3s transform;
+
+        & .nav__link {
+            display: block;
+            text-align: right;
+            padding-left: 50px;
+            padding-right: 15px;
+            color: #fff;
+
+            &:hover {
+                background-color: #fdac80;
+            }
+
+            &.active {
+                border-right: 5px solid #fff;
+                color: #000;
+            }
+        }
     }
 
     .nav__item {
@@ -91,23 +108,6 @@
 
         & + & {
             margin-left: 0;
-        }
-    }
-
-    .nav__link {
-        display: block;
-        text-align: right;
-        padding-left: 50px;
-        padding-right: 15px;
-        color: #fff;
-
-        &:hover {
-            background-color: #fdac80;
-        }
-
-        &.active {
-            border-right: 5px solid #fff;
-            color: #000;
         }
     }
 

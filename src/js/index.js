@@ -24,14 +24,14 @@ $(document).ready(function () {
 
     $(document).mouseup(function (e) {
 		var div = $('.nav__burger'),
-		    div2 = $('.nav__list');
+		    div2 = $('.nav__list_header');
 		if (!div.is(e.target) && div.has(e.target).length === 0 && !div2.is(e.target) && div2.has(e.target).length === 0) {
-			$('.nav').removeClass('visible');
+			$('.header__nav').removeClass('visible');
 		}
 	});
 
     $('.nav__burger').click(function() {
-        $('.nav').toggleClass('visible');
+        $('.header__nav').toggleClass('visible');
     })
 
     $('.js-commits__box').owlCarousel({
