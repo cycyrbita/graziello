@@ -19,83 +19,25 @@
     border-radius: 4px;
 }
 
-.contacts__day {
+.contacts__info-title {
+    max-width: 500px;
     text-transform: uppercase;
-    font-size: 19px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
-.contacts__phone {
-    display: block;
-    font-size: 50px;
-    font-weight: 600;
-    color: #000;
-    text-decoration: none;
-    
-    & img {
-        margin-right: 10px;
-    }
-}
-
-.contacts__mail {
-    display: block;
-    font-size: 19px;
+    font-size: 22px;
     font-weight: 700;
-    color: #000;
-    text-decoration: none;
-    margin-left: 15px;
-    margin-top: 10px;
-    
-    & img {
-        margin-right: 10px;
-    }
-}
+    margin-bottom: 10px;
 
-.contacts__description {
-    margin-top: 10px;
-}
-
-@media (max-width: 1000px) {
-    .contacts__day {
-        font-size: 15px;
-    }
-
-    .contacts__phone {
+    & span {
+        color: red;
         font-size: 28px;
-
-        & img {
-            max-width: 30px;
-        }
     }
+}
 
-    .contacts__mail {
-        font-size: 18px;
-        margin-left: 0;
-
-        & img {
-            max-width: 30px;
-        }
-    }
+.contacts__info-subtitle {
+    max-width: 500px;
+    font-size: 18px;
 }
 
 @media (max-width: 480px) {
-    .contacts__phone {
-        font-size: 20px;
-
-        & img {
-            max-width: 25px;
-        }
-    }
-
-    .contacts__mail {
-        font-size: 16px;
-
-        & img {
-            max-width: 25px;
-        }
-    }
-
     .contacts__info {
         padding: 20px;
     }

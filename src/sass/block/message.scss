@@ -1,13 +1,25 @@
-
 .message {
     max-width: 700px;
     margin-right: auto;
     margin-left: auto;
     padding: 30px;
-    margin-top: -130px;
     background-color: #fff;
     border-radius: 3px;
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.14);
+}
+
+.message__info {
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 30px;
+    background-color: #fff;
+    margin-top: 30px;
+}
+
+.message__subtitle {
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .message__title {
@@ -41,7 +53,7 @@
     font-size: 18px;
     padding: 16px;
     margin-top: 20px;
-    resize: noresize;
+    resize: none;
 }
 
 .message__btn {
@@ -50,8 +62,8 @@
     margin-left: auto;
     border: 0;
     overflow: none;
-    background-color: rgb(255,165,115);
-    background-image: linear-gradient(180deg, rgba(255,165,115,1) 0%, rgba(255,83,160,1) 100%);
+    background-color: rgb(255, 165, 115);
+    background-image: linear-gradient(180deg, rgba(255, 165, 115, 1) 0%, rgba(255, 83, 160, 1) 100%);
     font-size: 16px;
     font-weight: 700;
     color: #fff;
@@ -59,21 +71,33 @@
     cursor: pointer;
 }
 
-@media (max-width: 1000px) {
-    .message {
-        margin-top: 0;
+.message__phone,
+.message__mail {
+    display: block;
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    margin-top: 10px;
+
+    & img {
+        max-width: 20px;
+        margin-right: 10px;
     }
+}
+
+.message__phone {
+    color: #8a8a8a;
 }
 
 @media (max-width: 768px) {
     .message {
-        padding: 30px 15px;
+        padding: 15px;
     }
 
     .message__field {
         width: 100%;
 
-        & + & {
+        &+& {
             margin-top: 20px;
         }
     }
