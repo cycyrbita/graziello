@@ -6,7 +6,7 @@
     <%- include('block/header') %>
     <section class="section section_contacts">
         <div class="section__text">Graziello</div>
-        <div class="section_media-contacts"><img src="../media/section/media-contacts.png" alt=""></div>
+        <div class="section__media-contacts"><img src="../media/section/media-contacts.png" alt=""></div>
         <div class="container">
             <div class="contacts">
                 <h2 class="section__title contacts__title">Контакты</h2>
@@ -15,11 +15,24 @@
                     <div class="contacts__info">
                         <div class="contacts__day">Понедельник-суббота с 8:00 до 21:00</div>
                         <a href="tel:+525585262026" class="contacts__phone"><img src="../media/contacts/icon-1.png" alt="">+525585262026</a>
-                        <a href="mailto:graziello@gmail.com" class="contacts__phone"><img src="../media/contacts/icon-2.png" alt="">Graziello@gmail.com</a>
+                        <a href="mailto:graziello@gmail.com" class="contacts__mail"><img src="../media/contacts/icon-2.png" alt="">Graziello@gmail.com</a>
                     </div>
                     <div class="contacts__description">по телефону заказы не принимаются</div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="section section_message">
+        <div class="container">
+            <form class="message">
+                <div class="message__title">Отправить отзыв или предложение</div>
+                <div class="message__body">
+                    <input class="message__field" type="text" placeholder="Ваше имя">
+                    <input class="message__field" type="text" placeholder="Email">
+                    <textarea class="message__textarea" placeholder="Введите отзыв"></textarea>
+                    <button class="message__btn" type="submit">Отправить</button>
+                </div>
+            </form>
         </div>
     </section>
     <%- include('block/footer') %>
