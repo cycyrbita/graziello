@@ -34,6 +34,7 @@
     border-radius: 5px;
     background-color: #f9f7f0;
     text-align: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .2);
 }
 
 .order__form-title {
@@ -96,6 +97,16 @@
     color: #fff;
     letter-spacing: 2px;
     cursor: pointer;
+
+    &:hover {
+        background-color: rgba(255, 83, 160, 1);
+        background-image: linear-gradient(180deg, rgba(255, 83, 160, 1) 0%, rgba(255, 165, 115, 1) 100%);
+    }
+}
+
+.order__footer {
+    margin-top: 20px;
+    color: #ec1d3a;
 }
 
 @media (max-width: 1000px) {
