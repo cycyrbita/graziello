@@ -69,6 +69,7 @@
     &_commits {
         position: relative;
         z-index: 1;
+        padding-bottom: 0;
 
         &::before {
             position: absolute;
@@ -93,6 +94,7 @@
     &_message {
         position: relative;
         z-index: 1;
+        padding-bottom: 0;
     }
 
     &_delivery {
