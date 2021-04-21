@@ -3,7 +3,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    min-height: calc(100vh - 160px);
+    padding-bottom: 150px;
 }
 
 .order__title {
@@ -114,6 +114,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+        padding-bottom: 0;
     }
 
     .order__title {
