@@ -1,14 +1,16 @@
 .header {
+    position: fixed;
+	top: 0; 
+    left: 0;
+    z-index: 5;
+	width: 100%;
+	transition: all .3s ease;
     padding-top: 15px;
     padding-bottom: 15px;
     background-color: #ffa26f;
 
     &.mobile {
-        position: fixed;
-        z-index: 5;
-        top: 0;
-        right: 0;
-        left: 0;
+        transform: translateY(-100%);
     }
 }
 

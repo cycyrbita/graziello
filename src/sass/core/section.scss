@@ -8,7 +8,7 @@
     &_face {
         position: relative;
         z-index: 1;
-        padding-top: 100px;
+        padding-top: 180px;
         padding-bottom: 100px;
         background-color: #f2da6c;
 
@@ -116,6 +116,13 @@
     }
 }
 
+.section_privacy {
+    padding-left: 60px;
+    padding-right: 60px;
+    background-image: url("../media/section/privacy.jpg");
+    background-repeat: repeat;
+}
+
 .section__media-contacts {
     position: absolute;
     bottom: 0;
@@ -143,6 +150,7 @@
         padding-bottom: 40px;
 
         &_face {
+            padding-top: 120px;
             &::before {
                 background-size: 400px;
             }
@@ -171,6 +179,7 @@
         padding-bottom: 30px;
 
         &_face {
+            padding-top: 110px;
             &::before {
                 display: none;
             }

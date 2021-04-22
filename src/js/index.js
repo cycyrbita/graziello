@@ -8,18 +8,18 @@ $(document).ready(function () {
         }
     })
 
-    var lastScrollTop = 0;
-    $(window).scroll(function () {
-        var $header = $('.header').outerHeight();
-        var st = $(this).scrollTop();
-        if (st < lastScrollTop && st >= 0) {
-            $('body').css('padding-top', $header);
-            $('.header').addClass('mobile');
+    var header = $('.header'),
+	    scrollPrev = 0;
+
+    $(window).scroll(function() {
+        var scrolled = $(window).scrollTop();
+    
+        if ( scrolled > 100 && scrolled > scrollPrev ) {
+            header.addClass('mobile');
         } else {
-            $('body').css('padding-top', '0');
-            $('.header').removeClass('mobile');
+            header.removeClass('mobile');
         }
-        lastScrollTop = st;
+        scrollPrev = scrolled;
     });
 
     $(document).mouseup(function (e) {
